@@ -1,46 +1,66 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({Key key, this.title}) : super(key: key);
-  final String title;
-
   @override
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        elevation: 0,
+        title: Text('user_name'),
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
+            SizedBox(height: 20),
+            Text('search bar'),
+            SizedBox(height: 20),
+            Text('saldo anda'),
+            SizedBox(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                Text('Icon 1'),
+                Text('Icon 2'),
+                Text('Icon 3'),
+              ],
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+            SizedBox(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                Text('Icon 4'),
+                Text('Icon 5'),
+                Text('Icon 6'),
+              ],
             ),
+            SizedBox(height: 50),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                Text('Upgrade Menjadi Mitra Robot Biru'),
+                Text('Retail'),
+                Text('Koperasi/Komunitas'),
+              ],
+            ),
+            SizedBox(height: 150),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                Text('Infografis Panduan'),
+                Text('Infografis Panduan'),
+                Text('Infografis Panduan'),
+                Text('Infografis Panduan'),
+              ],
+            ),
+            SizedBox(height: 20),
+            Text('Punya Keluhan? Silahkan Lapor Di Sini'),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
       ),
     );
   }
