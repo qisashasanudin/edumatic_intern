@@ -37,9 +37,9 @@ class _HomePageState extends State<HomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              Text('Upgrade Menjadi Mitra Robot Biru'),
+              Text('Upgrade Menjadi \nMitra Robot Biru'),
               Text('Retail'),
-              Text('Koperasi/Komunitas'),
+              Text('Koperasi/\nKomunitas'),
             ],
           ),
           SizedBox(height: 100),
