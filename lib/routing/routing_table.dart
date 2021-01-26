@@ -2,7 +2,7 @@ import 'package:edumatic_intern/pages/main_menu.dart';
 import 'package:edumatic_intern/pages/main_menu_tabs/all_services/all_services.dart';
 import 'package:edumatic_intern/pages/main_menu_tabs/top_up/top_up.dart';
 import 'package:flutter/material.dart';
-import 'package:edumatic_intern/services/error_route.dart';
+import 'package:edumatic_intern/routing/error_route.dart';
 
 class RoutingTable {
   static Route<dynamic> generateRoute(RouteSettings settings) {
