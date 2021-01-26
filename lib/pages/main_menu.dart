@@ -27,7 +27,7 @@ class _MainMenuState extends State<MainMenu> {
       body: tabs[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.white,
-        selectedItemColor: Colors.blue,
+        selectedItemColor: Colors.blue[800],
         unselectedItemColor: Colors.grey,
         type: BottomNavigationBarType.fixed,
         currentIndex: _currentIndex,
