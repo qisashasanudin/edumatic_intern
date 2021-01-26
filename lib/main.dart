@@ -1,5 +1,5 @@
-
 import 'package:edumatic_intern/pages/main_menu.dart';
+import 'package:edumatic_intern/services/routing_table.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +17,8 @@ class RobotBiruApp extends StatelessWidget {
         primaryColor: Colors.blue[600],
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MainMenu(),
+      initialRoute: '/',
+      onGenerateRoute: RoutingTable.generateRoute,
     );
   }
 }
